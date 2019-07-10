@@ -14,7 +14,7 @@ object Utils {
     }
 
     fun toInitials(firstName: String?, lastName: String?): String? {
-        TODO ("not implemented")
+        return "${firstName?.get(0)?.toUpperCase()} ${lastName?.get(0)?.toUpperCase()}"
     }
 
 
