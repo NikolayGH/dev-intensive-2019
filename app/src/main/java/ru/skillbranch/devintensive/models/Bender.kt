@@ -58,10 +58,10 @@ class Bender(var status: Status = Status.NORMAL, var question: Question = Questi
             if(status==Status.CRITICAL){
                 status = Status.NORMAL
                 question = Question.NAME
-                "Это не правильный ответ. Давай все по новой\n${question.question}" to status.color
+                "Это неправильный ответ. Давай все по новой\n${question.question}" to status.color
             }else{
                 status = status.nextStatus()
-                "Это не правильный ответ\n${question.question}" to status.color
+                "Это неправильный ответ\n${question.question}" to status.color
             }
         }
     }
