@@ -28,7 +28,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:srcCompat="@drawable/avatar_default"/>
 
-    <ImageView
+    <ImageButton
             android:id="@+id/btn_switch_theme"
             android:layout_width="@dimen/btn_round_size_40"
             android:layout_height="@dimen/btn_round_size_40"
@@ -40,7 +40,7 @@
             app:layout_constraintTop_toTopOf="@+id/iv_avatar"
             app:srcCompat="@drawable/ic_switch_day_night"/>
 
-    <ImageView
+    <ImageButton
             android:id="@+id/btn_edit"
             android:layout_width="@dimen/btn_round_size_40"
             android:layout_height="@dimen/btn_round_size_40"
