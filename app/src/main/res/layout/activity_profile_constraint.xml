@@ -23,10 +23,9 @@
             android:layout_height="@dimen/avatar_round_size"
             app:layout_constraintBottom_toTopOf="@+id/tv_nick_name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:srcCompat="@drawable/avatar_default"/>
+            app:srcCompat="@drawable/avatar_default" />
 
     <ImageButton
             android:id="@+id/btn_switch_theme"
@@ -100,51 +99,51 @@
             app:layout_constraintTop_toTopOf="@+id/view"/>
 
     <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tv_rating"
             style="@style/Profile.Metrics.Value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            app:layout_constraintBottom_toTopOf="@+id/tv_rating"
+            app:layout_constraintBottom_toTopOf="@+id/tv_rating_lable"
             app:layout_constraintEnd_toStartOf="@+id/view2"
             app:layout_constraintStart_toStartOf="@+id/view"
             app:layout_constraintTop_toTopOf="@+id/view"
             app:layout_constraintVertical_chainStyle="packed"/>
 
     <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tv_respect"
             style="@style/Profile.Metrics.Value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            app:layout_constraintBottom_toTopOf="@+id/tv_respect"
+            app:layout_constraintBottom_toTopOf="@+id/tv_respect_title"
             app:layout_constraintEnd_toEndOf="@+id/view"
             app:layout_constraintStart_toEndOf="@+id/view2"
             app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:layout_constraintVertical_chainStyle="packed"/>
 
     <TextView
-            android:id="@+id/tv_rating"
+            android:id="@+id/tv_rating_lable"
             style="@style/Profile.Metrics.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/profile_label_rating"
             app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="@+id/textView3"
-            app:layout_constraintStart_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+            app:layout_constraintEnd_toEndOf="@+id/tv_rating"
+            app:layout_constraintStart_toStartOf="@+id/tv_rating"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rating"/>
 
     <TextView
-            android:id="@+id/tv_respect"
+            android:id="@+id/tv_respect_title"
             style="@style/Profile.Metrics.Label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/profile_label_respect"
             app:layout_constraintBottom_toBottomOf="@+id/view"
-            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="@+id/tv_respect"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"/>
+            app:layout_constraintStart_toStartOf="@+id/tv_respect"
+            app:layout_constraintTop_toBottomOf="@+id/tv_respect"/>
 
     <ImageView
             android:id="@+id/imageView5"
@@ -257,7 +256,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/ic_eye"
             app:layout_constraintStart_toEndOf="@+id/imageView10"
             app:layout_constraintTop_toTopOf="@+id/imageView10">
 
@@ -271,7 +270,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/ic_eye"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -280,4 +279,8 @@
             app:layout_constraintStart_toEndOf="@+id/wr_repository"
             app:layout_constraintTop_toTopOf="@+id/wr_repository"
             app:srcCompat="@drawable/ic_eye_24dp"/>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
